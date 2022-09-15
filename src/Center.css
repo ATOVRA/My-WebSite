@@ -1,0 +1,471 @@
+@import url('http://fonts.cdnfonts.com/css/sansation');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.container1
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.background1
+{
+    position:absolute;
+    width:100%;
+    height:820px;
+}
+.text-container
+{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 6%;
+    /* border: 1px solid red; */
+}
+.text-container img
+{
+    width: 400px;
+    cursor: pointer;
+}
+.text-container h1
+{
+    color: #00FFF0;
+    font-family: 'Sansation', sans-serif;
+    font-size: 120px;
+    text-shadow: 10px 4px 4px rgba(0, 255, 240, 0.4);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    animation: neonAnim1 2s alternate-reverse    infinite;
+}
+@keyframes neonAnim1 {
+    from {
+        text-shadow:
+        0 0 0px rgba(0, 123, 255, .5),
+        0 0 5px rgba(0, 123, 255, .5),
+        0 0 10px rgba(0, 123, 255, .5);
+        transform: scale(0.8);
+    }
+    to {
+            text-shadow:
+              0 0 20px rgba(0, 123, 255, .7),
+              0 0 60px rgba(0, 123, 255, .7),
+              0 0 120px rgba(0, 123, 255, .7);
+              transform: scale(1.1);
+      }
+}
+.text-container p 
+{
+    color: #00FFFF;
+    font-size: 30px;
+    font-family: 'Sansation', sans-serif;
+    width: 320px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    user-select: none;
+    animation: neonAnim2 3s alternate-reverse infinite;
+}
+@keyframes neonAnim2 {
+    from {
+        text-shadow:
+          0 0 10px rgba(0, 123, 255, .7),
+          0 0 40px rgba(0, 123, 255, .7),
+          0 0 100px rgba(0, 123, 255, .7);
+      }
+      to {
+        text-shadow:
+          0 0 5px rgba(0, 123, 255, .7),
+          0 0 20px rgba(0, 123, 255, .7),
+          0 0 60px rgba(0, 123, 255, .7);
+      }
+}
+
+.CodeLanguages
+{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    margin-left: 280px;
+    margin-top: 40px;
+    margin-left: 28%;
+    /* border: 1px solid red; */
+}
+.CodeLanguages img
+{
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.CodeLanguages img:hover
+{
+    transform: scale(1.2);
+}
+.html-img
+{
+    position: absolute;
+    width: 150px;
+    margin-left: 4%;
+}
+.css-img
+{
+    position: absolute;
+    width: 170px;
+    right: 5%;
+    top: 135px;
+}
+.js-img
+{
+    position: absolute;
+    width: 180px;
+    top: 37%;
+}
+.react-img
+{
+    position: absolute;
+    width: 220px;
+    top: 440px;
+    right: 0;
+}
+.python-img
+{
+    position: absolute; 
+    width:180px;
+    bottom: 0;
+}
+
+/* Width responsive 1336px */
+@media(max-width:1336px){
+    .background1
+    {
+        height: 700px;
+    }
+    .text-container
+    {
+        margin-left: 6%;
+    }
+    .CodeLanguages
+    {
+        width: 370px;
+        height: 650px;
+        margin-left: 27%;
+    }
+    .html-img
+{
+    position: absolute;
+    width: 130px;
+}
+.css-img
+{
+    position: absolute;
+    width: 170px;
+    right: 0;
+    top: 115px;
+}
+.js-img
+{
+    position: absolute;
+    width: 160px;
+    top: 39%;
+}
+.react-img
+{
+    position: absolute;
+    width: 210px;
+    top: 440px;
+    right: 0;
+}
+.python-img
+{
+    position: absolute; 
+    width:160px;
+    bottom: 0;
+}
+}
+
+/* Width responsive 1140px */
+@media(max-width:1140px){
+    .background1
+    {
+        height: 650px;
+    }
+    .text-container img 
+    {
+        width: 300px;
+    }
+    .text-container h1
+    {
+        font-size: 100px;
+    }
+    .text-container p
+    {
+        font-size: 25px
+    }
+    .CodeLanguages
+    {
+        height: 570px;
+        width: 300px;
+    }
+.html-img
+{
+    position: absolute;
+    width: 100px;
+}
+.css-img
+{
+    position: absolute;
+    width: 140px;
+    right: 0;
+    top: 17%;
+}
+.js-img
+{
+    position: absolute;
+    width: 130px;
+    top: 39%;
+}
+.react-img
+{
+    position: absolute;
+    width: 180px;
+    top: 63%;
+    right: 0;
+}
+.python-img
+{
+    position: absolute; 
+    width:130px;
+    bottom: 0;
+}
+}
+
+/* Width responsive 960px */
+@media(max-width:960px){
+    .background1
+    {
+        height: 550px;
+    }
+    .text-container
+    {
+        margin-top: 140px;
+        margin-left: 7%;
+    }
+    .text-container img 
+    {
+        width: 250px;
+    }
+    .text-container h1
+    {
+        font-size: 85px;
+    }
+    .text-container p
+    {
+        width: 260px;
+        font-size: 20px
+    }
+    .CodeLanguages
+    {
+        width: 280px;
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+    .html-img
+{
+    position: absolute;
+    width: 90px;
+}
+.css-img
+{
+    position: absolute;
+    width: 120px;
+    right: 7%;
+    top: 17%;
+}
+.js-img
+{
+    position: absolute;
+    width: 120px;
+    top: 37%;
+}
+.react-img
+{
+    position: absolute;
+    width: 170px;
+    top: 63%;
+    right: 0;
+}
+.python-img
+{
+    position: absolute; 
+    width:120px;
+    bottom: 0;
+}
+}
+
+/* Width responsive 768px */
+@media(max-width:768px){
+    .background1
+    {
+        height: 500px;
+    }
+    .text-container
+    {
+        margin-top: 110px;
+        margin-left: 7%;
+    }
+    .text-container img 
+    {
+        width: 220px;
+    }
+    .text-container h1
+    {
+        font-size: 70px;
+    }
+    .text-container p
+    {
+        width: 200px;
+        font-size: 16px
+    }
+    .CodeLanguages
+    {
+        width: 220px;
+        height: 450px;
+        margin-top: 30px;
+        margin-left: 25%;
+    }
+    .html-img
+{
+    position: absolute;
+    width: 80px;
+}
+.css-img
+{
+    position: absolute;
+    width: 100px;
+    right: 7%;
+    top: 17%;
+}
+.js-img
+{
+    position: absolute;
+    width: 100px;
+    top: 37%;
+}
+.react-img
+{
+    position: absolute;
+    width: 150px;
+    top: 61%;
+    right: 0;
+}
+.python-img
+{
+    position: absolute; 
+    width:100px;
+    bottom: 0;
+}
+}
+
+/* Width responsive 576px */
+@media(max-width:576px){
+    .container1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .background1
+    {
+        height: 830px;
+    }
+    .text-container
+    {
+        margin: 50px auto 50px auto;
+    }
+    .text-container img 
+    {
+        width: 230px;
+    }
+    .text-container h1
+    {
+        font-size: 80px;
+    }
+    .text-container p
+    {
+        width: 200px;
+        font-size: 18px
+    }
+    .CodeLanguages
+    {
+        margin: 0px auto;
+        width: 340px;
+        height: 500px;
+    }
+    .html-img
+    {
+        position: absolute;
+        width: 100px;
+    }
+    .css-img
+    {
+        position: absolute;
+        width: 120px;
+        right: 7%;
+        top: 17%;
+    }
+    .js-img
+    {
+        position: absolute;
+        width: 120px;
+        top: 37%;
+    }
+    .react-img
+    {
+        position: absolute;
+        width: 170px;
+        top: 61%;
+        right: 0;
+    }
+    .python-img
+    {
+        position: absolute; 
+        width:130px;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+/* .gifAnimation
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
